@@ -1,0 +1,18 @@
+.restaurants_list {
+    background-color: $grey;
+    padding: 40px 25px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .new {
+        background-color: $colour-tertiary;
+        color: darken($colour-tertiary, 40%);
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 7px 14px;
+        position: absolute;
+        right: 40px;
+    }
+}

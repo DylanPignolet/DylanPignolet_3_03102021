@@ -1,0 +1,226 @@
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 1.5rem;
+  color: #FFF;
+  background: linear-gradient(175deg, #FF79DA, #ae80e5);
+  border: none;
+  cursor: pointer;
+}
+
+.restaurants {
+  background-color: #FFF;
+  height: 220px;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-size: 1rem;
+}
+.restaurants img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.restaurants .name {
+  height: 30%;
+}
+
+.intro {
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 35px 50px;
+}
+.intro h1 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 10px;
+}
+.intro p {
+  font-size: 1.1rem;
+  font-weight: 350;
+  margin-bottom: 25px;
+}
+
+.form_location {
+  background-color: #ededed;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #434343;
+  box-shadow: inset 0px 5px 3px -4px #c2c2c2;
+}
+.form_location i {
+  position: relative;
+  left: 20px;
+}
+
+input[type=search i] {
+  border: none;
+  background-color: #ededed;
+  color: #434343;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 550;
+  padding: 0;
+}
+
+.bloc_steps {
+  margin: 40px 25px;
+}
+.bloc_steps h2 {
+  margin-bottom: 20px;
+}
+.bloc_steps .steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bloc_steps .step {
+  background-color: #F5F5F5;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 7px #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bloc_steps .step i {
+  color: #767676;
+  font-size: 1.4rem;
+  margin: 0px 25px 0 15px;
+  width: 20px;
+}
+.bloc_steps .step .step_num {
+  background-color: #9356DC;
+  color: #FFF;
+  border-radius: 1rem;
+  height: 25px;
+  width: 26px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -10px;
+}
+.bloc_steps .step .step_description {
+  width: 100%;
+  font-weight: 700;
+}
+.bloc_steps .step_3 {
+  background-color: #F5F5F5;
+  width: 100%;
+  margin-bottom: 15px;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 7px #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.bloc_steps .step_3 i {
+  color: #767676;
+  font-size: 1.4rem;
+  margin: 0px 25px 0 15px;
+  width: 20px;
+}
+.bloc_steps .step_3 .step_num {
+  background-color: #9356DC;
+  color: #FFF;
+  border-radius: 1rem;
+  height: 25px;
+  width: 26px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -10px;
+}
+.bloc_steps .step_3 .step_description {
+  width: 100%;
+  font-weight: 700;
+}
+.bloc_steps .step_3 i {
+  color: #9356DC;
+}
+
+.restaurants_list {
+  background-color: #F5F5F5;
+  padding: 40px 25px;
+}
+.restaurants_list h2 {
+  margin-bottom: 20px;
+}
+.restaurants_list .new {
+  background-color: #99E2D0;
+  color: #278870;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 7px 14px;
+  position: absolute;
+  right: 40px;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  text-align: center;
+}
+header .logo {
+  margin: 10px 0px 10px;
+}
+header img {
+  margin: auto;
+}
+
+footer {
+  background-color: #292929;
+  color: #FFF;
+  padding: 20px 20px 25px;
+}
+footer .logo_footer {
+  font-family: "Shrikhand";
+  margin-bottom: 10px;
+}
+footer li {
+  margin-bottom: 7px;
+}
+footer li a {
+  color: #FFF;
+}
+footer li i {
+  margin-right: 10px;
+  font-size: 0.7rem;
+  width: 3%;
+}
+
+/*# sourceMappingURL=style.css.map */

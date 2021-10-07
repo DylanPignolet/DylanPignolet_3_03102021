@@ -1,0 +1,34 @@
+.bloc_steps {
+    margin: 40px 25px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        @include step;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step_3 {
+        @include step;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($colour-primary, .1);
+
+        i {
+            color: $colour-primary;
+        }
+    }
+
+    
+}

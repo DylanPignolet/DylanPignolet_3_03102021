@@ -1,0 +1,23 @@
+.form_location {
+    background-color: $dark-grey;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $darkest-grey;
+    box-shadow: inset 0px 5px 3px -4px darken($grey, 20%);
+    i {
+        position: relative;
+        left: 20px;
+    }
+}
+
+input[type="search" i] {
+    border: none;
+    background-color: $dark-grey;
+    color: $darkest-grey;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 550;
+    padding: 0;
+}

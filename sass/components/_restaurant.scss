@@ -1,0 +1,18 @@
+.restaurants {
+    background-color: $white;
+    height: 220px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 1rem;
+
+    img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+    }
+
+    .name {
+        height: 30%;
+    }
+}

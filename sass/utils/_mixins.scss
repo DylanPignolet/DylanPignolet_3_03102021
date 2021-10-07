@@ -1,0 +1,48 @@
+@mixin btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 1.5rem;
+    color: $white;
+    background: linear-gradient(175deg, $colour-secondary, lighten($colour-primary, 10%));
+    border: none;
+    cursor: pointer;
+}
+
+@mixin step {
+    background-color: $grey;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 7px $dark-grey;
+
+    i {
+        color: $i-grey;
+        font-size: 1.4rem;
+        margin: 0px 25px 0 15px;
+        width: 20px;
+        }
+
+    .step_num {
+        background-color: $colour-primary;
+        color: $white;
+        border-radius: 1rem;
+        height: 25px;
+        width: 26px;
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -10px;
+    }
+
+    .step_description {
+        width: 100%;
+        font-weight: 700;
+    }
+
+}

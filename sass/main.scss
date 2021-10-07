@@ -1,0 +1,17 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./components/buttons";
+@import "./components/restaurant";
+
+@import "./pages/intro";
+@import "./pages/form_location";
+@import "./pages/steps";
+@import "./pages/restaurants";
+
+@import "./base/base";
+
+@import "./layout/header";
+@import "./layout/footer";

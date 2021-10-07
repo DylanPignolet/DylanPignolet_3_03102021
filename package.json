@@ -1,0 +1,17 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanPignolet/DylanPignolet_3_03102021.git"
+  },
+  "author": "dylan_pignolet",
+  "license": "ISC"
+}
