@@ -6,7 +6,7 @@
     padding: 0 20px;
     border-radius: 1.5rem;
     color: $white;
-    background: linear-gradient(175deg, $colour-secondary, lighten($colour-primary, 10%));
+    background: $primary-gradiant;
     border: none;
     cursor: pointer;
 }
@@ -14,16 +14,16 @@
 @mixin step {
     background-color: $grey;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     height: 70px;
     border-radius: 20px;
     box-shadow: 0px 8px 7px $dark-grey;
 
     i {
         color: $i-grey;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         margin: 0px 25px 0 15px;
-        width: 20px;
+        width: 23px;
         }
 
     .step_num {
@@ -45,4 +45,31 @@
         font-weight: 700;
     }
 
+}
+
+@mixin like_animation {
+    
+    .unliked{
+        transition: color 550ms 50ms ease-in-out;
+        position: relative;
+        color: $i-grey;
+        &:hover {
+            color: $colour-secondary;
+        }
+
+        &:hover > .liked{
+            transform: scale(1);
+        }
+    }
+    .liked{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $primary-gradiant;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(0);
+        transform-origin: bottom;
+        transition: transform 400ms 50ms ease-in-out;
+    }
 }

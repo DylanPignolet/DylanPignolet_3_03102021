@@ -5,6 +5,7 @@
     border-radius: 1rem;
     overflow: hidden;
     font-size: 1rem;
+    position: relative;
 
     img {
         width: 100%;
@@ -12,7 +13,31 @@
         object-fit: cover;
     }
 
-    .name {
+    .name_like {
+        display: flex;
+        flex-direction: row;
         height: 30%;
+        width: 100%;
+    }
+
+    .name {
+        font-size: 0.9rem;
+        margin: 10px 0 0 15px;
+        width: 70%;
+
+        h3 {
+            font-weight: 900;
+            margin-bottom: 2px;
+        }
+    }
+
+    .like {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        font-size: 1.7rem;
+        cursor: pointer;
+        @include like_animation;
     }
 }

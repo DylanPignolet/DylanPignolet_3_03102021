@@ -18,14 +18,57 @@
   border-radius: 1rem;
   overflow: hidden;
   font-size: 1rem;
+  position: relative;
 }
 .restaurants img {
   width: 100%;
   height: 70%;
   object-fit: cover;
 }
-.restaurants .name {
+.restaurants .name_like {
+  display: flex;
+  flex-direction: row;
   height: 30%;
+  width: 100%;
+}
+.restaurants .name {
+  font-size: 0.9rem;
+  margin: 10px 0 0 15px;
+  width: 70%;
+}
+.restaurants .name h3 {
+  font-weight: 900;
+  margin-bottom: 2px;
+}
+.restaurants .like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.restaurants .like .unliked {
+  transition: color 550ms 50ms ease-in-out;
+  position: relative;
+  color: #767676;
+}
+.restaurants .like .unliked:hover {
+  color: #FF79DA;
+}
+.restaurants .like .unliked:hover > .liked {
+  transform: scale(1);
+}
+.restaurants .like .liked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(175deg, #FF79DA, #ae80e5);
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: transform 400ms 50ms ease-in-out;
 }
 
 .intro {
@@ -82,7 +125,7 @@ input[type=search i] {
 .bloc_steps .step {
   background-color: #F5F5F5;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   height: 70px;
   border-radius: 20px;
   box-shadow: 0px 8px 7px #ededed;
@@ -92,9 +135,9 @@ input[type=search i] {
 }
 .bloc_steps .step i {
   color: #767676;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0px 25px 0 15px;
-  width: 20px;
+  width: 23px;
 }
 .bloc_steps .step .step_num {
   background-color: #9356DC;
@@ -116,7 +159,7 @@ input[type=search i] {
 .bloc_steps .step_3 {
   background-color: #F5F5F5;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   height: 70px;
   border-radius: 20px;
   box-shadow: 0px 8px 7px #ededed;
@@ -124,12 +167,13 @@ input[type=search i] {
   justify-content: center;
   align-items: center;
   background-color: rgba(147, 86, 220, 0.1);
+  margin-bottom: 20px;
 }
 .bloc_steps .step_3 i {
   color: #767676;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0px 25px 0 15px;
-  width: 20px;
+  width: 23px;
 }
 .bloc_steps .step_3 .step_num {
   background-color: #9356DC;
@@ -155,6 +199,8 @@ input[type=search i] {
 .restaurants_list {
   background-color: #F5F5F5;
   padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
 }
 .restaurants_list h2 {
   margin-bottom: 20px;
@@ -166,7 +212,8 @@ input[type=search i] {
   font-weight: 500;
   padding: 7px 14px;
   position: absolute;
-  right: 40px;
+  right: 20px;
+  top: 20px;
 }
 
 body {

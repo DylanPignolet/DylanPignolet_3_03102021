@@ -7,4 +7,5 @@ $grey: #F5F5F5;
 $dark-grey: darken($grey, 3%);
 $i-grey: darken($grey, 50%);
 $darkest-grey: darken($grey, 70%);
-$grey-footer: darken($grey, 80%)
+$grey-footer: darken($grey, 80%);
+$primary-gradiant: linear-gradient(175deg, $colour-secondary, lighten($colour-primary, 10%));

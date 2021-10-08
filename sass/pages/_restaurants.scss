@@ -1,6 +1,8 @@
 .restaurants_list {
     background-color: $grey;
     padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         margin-bottom: 20px;
@@ -13,6 +15,8 @@
         font-weight: 500;
         padding: 7px 14px;
         position: absolute;
-        right: 40px;
+        right: 20px;
+        top: 20px;
+        
     }
 }
