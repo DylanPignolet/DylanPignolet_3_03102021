@@ -1,7 +1,7 @@
 .btn {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   height: 50px;
   padding: 0 20px;
   border-radius: 1.5rem;
@@ -42,6 +42,11 @@
     margin-bottom: 15px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    height: 300px;
+  }
+}
 .restaurants img {
   width: 100%;
   height: 70%;
@@ -61,6 +66,11 @@
 .restaurants .name h3 {
   font-weight: 900;
   margin-bottom: 2px;
+}
+@media screen and (min-width: 720px) {
+  .restaurants .name {
+    font-size: 1.1rem;
+  }
 }
 .restaurants .like {
   display: flex;
@@ -116,6 +126,11 @@
 @media screen and (min-width: 720px) {
   .intro p {
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .intro {
+    padding: 50px 50px;
   }
 }
 
@@ -176,10 +191,22 @@ input[type=search i] {
     width: 50%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .bloc_steps h2 {
+    margin-bottom: 40px;
+  }
+}
 .bloc_steps .steps {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .bloc_steps .steps {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .bloc_steps .step {
   background-color: #F5F5F5;
@@ -227,6 +254,11 @@ input[type=search i] {
   }
   .bloc_steps .step i {
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bloc_steps .step {
+    width: 32.5%;
   }
 }
 .bloc_steps .step_3 {
@@ -279,8 +311,18 @@ input[type=search i] {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .bloc_steps .step_3 {
+    width: 32.5%;
+  }
+}
 .bloc_steps .step_3 i {
   color: #9356DC;
+}
+@media screen and (min-width: 1024px) {
+  .bloc_steps .step_3 {
+    margin-bottom: 30px;
+  }
 }
 
 .restaurants_list {

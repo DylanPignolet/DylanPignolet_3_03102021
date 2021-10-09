@@ -20,4 +20,8 @@
             font-size: 1.3rem;
         }
     }
+
+    @include desktop-only {
+        padding: 50px 50px;
+    }
 }

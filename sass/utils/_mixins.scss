@@ -1,7 +1,7 @@
 @mixin btn {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     height: 50px;
     padding: 0 20px;
     border-radius: 1.5rem;
@@ -67,6 +67,9 @@
         }
     }
 
+    @include desktop-only {
+        width: 32.5%;
+    }
 }
 
 @mixin like_animation {

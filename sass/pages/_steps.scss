@@ -20,12 +20,22 @@
             padding-bottom: 8px;
             width: 50%;
         }
+
+        @include desktop-only {
+            margin-bottom:  40px;
+        }
     }
 
     .steps {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include desktop-only {
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 
     .step {
@@ -46,7 +56,9 @@
         i {
             color: $colour-primary;
         }
-    }
 
-    
+        @include desktop-only {
+            margin-bottom: 30px;
+        }
+    }
 }
