@@ -4,8 +4,30 @@
     display: flex;
     flex-direction: column;
 
+    @include tablet-only {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .restaurants_title {
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+    }
+
     h2 {
         margin-bottom: 20px;
+
+        @include tablet-only {
+            font-size: 1.9rem;
+            text-align: center;
+            border-bottom: 2px solid;
+            border-image: linear-gradient(to right, $colour-primary, $colour-secondary);
+            border-image-slice: 1;
+            padding-bottom: 8px;
+            width: 50%;
+        }
     }
 
     .new {

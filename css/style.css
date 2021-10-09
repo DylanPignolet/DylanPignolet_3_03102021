@@ -9,6 +9,15 @@
   background: linear-gradient(175deg, #FF79DA, #ae80e5);
   border: none;
   cursor: pointer;
+  box-shadow: 0px 2px 5px #767676;
+}
+.btn:hover {
+  background: linear-gradient(175deg, #FF79DA, #ae80e5);
+}
+@media screen and (min-width: 720px) {
+  .btn {
+    transform: scale(1.2);
+  }
 }
 
 .restaurants {
@@ -19,6 +28,19 @@
   overflow: hidden;
   font-size: 1rem;
   position: relative;
+  box-shadow: 0px 2px 5px #a09d9d;
+  transition: all 0.5s;
+}
+.restaurants:hover {
+  transform: scale(1.03);
+  transition: all 0s;
+}
+@media screen and (min-width: 720px) {
+  .restaurants {
+    width: 49%;
+    height: 260px;
+    margin-bottom: 15px;
+  }
 }
 .restaurants img {
   width: 100%;
@@ -79,12 +101,22 @@
 .intro h1 {
   font-size: 1.6rem;
   font-weight: 800;
-  margin: 0 10px;
+  margin: 0 10px 10px;
+}
+@media screen and (min-width: 720px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
 }
 .intro p {
   font-size: 1.1rem;
   font-weight: 350;
   margin-bottom: 25px;
+}
+@media screen and (min-width: 720px) {
+  .intro p {
+    font-size: 1.3rem;
+  }
 }
 
 .form_location {
@@ -100,6 +132,11 @@
   position: relative;
   left: 20px;
 }
+@media screen and (min-width: 720px) {
+  .form_location {
+    font-size: 1.3rem;
+  }
+}
 
 input[type=search i] {
   border: none;
@@ -107,15 +144,37 @@ input[type=search i] {
   color: #434343;
   text-align: center;
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 600;
   padding: 0;
+}
+@media screen and (min-width: 720px) {
+  input[type=search i] {
+    font-size: 1.3rem;
+  }
 }
 
 .bloc_steps {
   margin: 40px 25px;
 }
+.bloc_steps .step_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .bloc_steps h2 {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 720px) {
+  .bloc_steps h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #9356DC, #FF79DA);
+    border-image-slice: 1;
+    height: 100%;
+    padding-bottom: 8px;
+    width: 50%;
+  }
 }
 .bloc_steps .steps {
   display: flex;
@@ -126,7 +185,7 @@ input[type=search i] {
   background-color: #F5F5F5;
   width: 100%;
   margin-bottom: 30px;
-  height: 70px;
+  height: 80px;
   border-radius: 20px;
   box-shadow: 0px 8px 7px #ededed;
   display: flex;
@@ -152,15 +211,29 @@ input[type=search i] {
   position: relative;
   left: -10px;
 }
+@media screen and (min-width: 720px) {
+  .bloc_steps .step .step_num {
+    font-size: 1.1rem;
+  }
+}
 .bloc_steps .step .step_description {
   width: 100%;
   font-weight: 700;
+}
+@media screen and (min-width: 720px) {
+  .bloc_steps .step {
+    width: 65%;
+    font-size: 1.3rem;
+  }
+  .bloc_steps .step i {
+    font-size: 1.3rem;
+  }
 }
 .bloc_steps .step_3 {
   background-color: #F5F5F5;
   width: 100%;
   margin-bottom: 30px;
-  height: 70px;
+  height: 80px;
   border-radius: 20px;
   box-shadow: 0px 8px 7px #ededed;
   display: flex;
@@ -188,9 +261,23 @@ input[type=search i] {
   position: relative;
   left: -10px;
 }
+@media screen and (min-width: 720px) {
+  .bloc_steps .step_3 .step_num {
+    font-size: 1.1rem;
+  }
+}
 .bloc_steps .step_3 .step_description {
   width: 100%;
   font-weight: 700;
+}
+@media screen and (min-width: 720px) {
+  .bloc_steps .step_3 {
+    width: 65%;
+    font-size: 1.3rem;
+  }
+  .bloc_steps .step_3 i {
+    font-size: 1.3rem;
+  }
 }
 .bloc_steps .step_3 i {
   color: #9356DC;
@@ -202,8 +289,31 @@ input[type=search i] {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 720px) {
+  .restaurants_list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.restaurants_list .restaurants_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .restaurants_list h2 {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 720px) {
+  .restaurants_list h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #9356DC, #FF79DA);
+    border-image-slice: 1;
+    padding-bottom: 8px;
+    width: 50%;
+  }
 }
 .restaurants_list .new {
   background-color: #99E2D0;
