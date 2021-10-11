@@ -1,4 +1,4 @@
-header {
+.header_1 {
     text-align: center;
 
     .logo {
@@ -7,5 +7,22 @@ header {
 
     img {
         margin: auto;
+    }
+}
+
+.header_2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    .logo {
+        margin: 15px 0px 10px;
+        width: 80%;
+        text-align: center;
+    }
+    .back {
+        width: 20%;
+        font-size: 1.5rem;
+        margin-left: 30px;
     }
 }

@@ -33,7 +33,7 @@
 
         @include desktop-only {
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
         }
     }
@@ -59,6 +59,7 @@
 
         @include desktop-only {
             margin-bottom: 30px;
+            margin-right: 0;
         }
     }
 }
