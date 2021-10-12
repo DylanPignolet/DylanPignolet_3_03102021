@@ -1,7 +1,7 @@
 .bloc_menu {
     background-color: $grey;
-    padding: 30px 20px;
-    border-radius: 3rem 3rem 0 0;
+    padding: 30px 15px;
+    border-radius: 2rem 2rem 0 0;
     z-index: 2;
     position: relative;
     bottom: 40px;
@@ -10,6 +10,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include like_animation;
+
+        .like {
+            cursor: pointer;
+            font-size: 1.7rem;
+            margin-right: 30px;
+        }
     }
 
     h1 {
@@ -17,4 +24,31 @@
         font-family: 'Shrikhand';
         font-weight: 200;
     }
+
+    h3 {
+        margin-top: 35px;
+        font-weight: 400;
+
+        &::after {
+            content: "";
+            display: block;
+            background-color: $colour-tertiary;
+            width: 12.5%;
+            height: 4px;
+            margin-top: 6px;
+        }
+    }
+
+    .btn {
+        margin: auto;
+        display: block;
+        padding: 0 60px;
+        margin-top: 45px;
+        margin-bottom: 50px;
+
+    }
+}
+
+footer {
+    margin-top: -40px;
 }
