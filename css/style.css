@@ -143,6 +143,32 @@
   font-weight: 600;
 }
 
+.meal .checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background-color: #99E2D0;
+  width: 85px;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1.5rem;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 400ms 50ms ease-in-out;
+  display: none;
+}
+.meal .checked .fas {
+  transform: rotate(0deg);
+  transition: transform 400ms 50ms ease-in-out;
+}
+.meal:hover .checked {
+  transform: scaleX(1);
+  display: flex;
+}
+.meal:hover .fas {
+  transform: rotate(360deg);
+}
+
 .intro {
   background-color: #F5F5F5;
   text-align: center;
