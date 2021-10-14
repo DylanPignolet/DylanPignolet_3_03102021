@@ -1,7 +1,7 @@
 .meal {
     @include meal;
     opacity: 0;
-    animation: meal-apparition 900ms 300ms forwards;
+    animation: meal-apparition 900ms 150ms forwards;
     
     @keyframes meal-apparition{
         from {
@@ -12,4 +12,16 @@
             opacity: 1;
         }
     }
+}
+
+.meal:nth-child(2) {
+    animation-delay: 300ms;
+}
+
+.meal:nth-child(3) {
+    animation-delay: 450ms;
+}
+
+.meal:nth-child(4) {
+    animation-delay: 600ms;
 }
