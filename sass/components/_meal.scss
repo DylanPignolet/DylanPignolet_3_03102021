@@ -4,13 +4,10 @@
     animation: meal-apparition 900ms 300ms forwards;
     
     @keyframes meal-apparition{
-        0% {
+        from {
             transform: translateY(30px);
         }
-        50%{
-            opacity: .5;
-        }
-        100% {
+        to {
             transform: translate(0);
             opacity: 1;
         }

@@ -148,13 +148,10 @@
   font-weight: 600;
 }
 @keyframes meal-apparition {
-  0% {
+  from {
     transform: translateY(30px);
   }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
+  to {
     transform: translate(0);
     opacity: 1;
   }
