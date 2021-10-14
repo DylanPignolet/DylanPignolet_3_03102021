@@ -1,3 +1,18 @@
 .meal {
     @include meal;
+    opacity: 0;
+    animation: meal-apparition 900ms 300ms forwards;
+    
+    @keyframes meal-apparition{
+        0% {
+            transform: translateY(30px);
+        }
+        50%{
+            opacity: .5;
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
 }
