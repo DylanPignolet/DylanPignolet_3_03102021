@@ -1,0 +1,46 @@
+.loading_spinner {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($grey, 0.6);
+    z-index: 2;
+    transform: scale(0);
+    animation: spinner_background 3s 50ms backwards;
+    height: 100%;
+    width: 100%;
+    
+    i {
+        transform: scale(0);
+        color: $colour-primary;
+        animation: loading_spinner 3s 50ms linear backwards;
+        font-size: 10rem;
+        position: fixed;
+    }
+}
+
+@keyframes spinner_background {
+    from {
+        transform: scale(1);
+    } 
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes loading_spinner {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.75;
+    }
+    100% {
+        transform: rotate(2turn);
+        opacity: 0;
+    }
+}
