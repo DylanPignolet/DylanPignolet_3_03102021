@@ -47,6 +47,19 @@
         margin-bottom: 50px;
 
     }
+
+    .menu {
+        @include desktop-only {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sub-menu {
+            @include desktop-only {
+                width: 32%;
+            }
+        }
+    }
 }
 
 footer {
